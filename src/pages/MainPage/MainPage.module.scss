@@ -1,0 +1,7 @@
+@import "../../styles/index.scss";
+
+.section {
+  &__container {
+    @include flex(row, space-between, center);
+  }
+}
