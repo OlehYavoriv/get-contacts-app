@@ -1,0 +1,27 @@
+@import "../../styles/index.scss";
+
+.form {
+  @apply sticky gap-y-[10px];
+  @include flex(column, center, stretch);
+
+  &__item {
+    @apply flex flex-col;
+    &_label {
+      @include text($black-color, 12px, 20px, 400);
+      padding: 6px 6px;
+    }
+
+    &_field {
+      @include form-field(14px 12px, 8px, 1px solid $silver-chalice);
+      @include set-size(280px, auto);
+    }
+  }
+
+  .btn {
+    @include btn-styles(
+      rgba(155, 147, 147, 0),
+      $silver-chalice,
+      $silver-chalice
+    );
+  }
+}
