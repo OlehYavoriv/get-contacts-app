@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *,
 *::before,
 *::after {
@@ -15,4 +19,8 @@ body,
 
 a {
   text-decoration: none;
+}
+
+.container {
+  @apply max-w-[1280px] max-h-[400px] w-full mx-auto p-2;
 }
