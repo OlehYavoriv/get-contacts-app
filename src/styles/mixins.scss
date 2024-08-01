@@ -1,0 +1,11 @@
+@mixin set-size($width: auto, $height: auto) {
+  height: $height;
+  width: $width;
+}
+
+@mixin flex($direction: row, $content: flex-start, $items: stretch) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $items;
+}
