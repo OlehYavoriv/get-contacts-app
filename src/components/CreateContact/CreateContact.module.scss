@@ -1,0 +1,7 @@
+@import "../../styles/index.scss";
+
+.container {
+  &__title {
+    @include text($black-color, 20px, 30px, 500);
+  }
+}
