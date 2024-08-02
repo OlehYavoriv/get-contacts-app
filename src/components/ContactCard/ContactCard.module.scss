@@ -1,0 +1,31 @@
+@import "../../styles/index.scss";
+
+.card {
+  @apply flex relative items-center p-[10px] border border-[$alto] bg-white rounded-[8px] mb-[10px];
+
+  &__avatar {
+    @include set-size(70px, 70px);
+    @apply rounded-[50%] mr-[15px] mb-[10px];
+  }
+
+  &__name,
+  &__email {
+    @include text($black-color, 16px, 20px, 500);
+    @apply mb-[2px];
+  }
+
+  &__tags {
+    &_item {
+      @include text($black-color, 14px, 20px, 500);
+      @apply rounded-[4px] bg-[#a6a6a6] py-[2px] px-[12px];
+    }
+  }
+
+  .delete_btn {
+    @apply absolute left-[350px] top-[20px];
+
+    &:hover {
+      @apply text-[#B94E48] cursor-pointer;
+    }
+  }
+}
