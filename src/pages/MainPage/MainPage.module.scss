@@ -2,6 +2,6 @@
 
 .section {
   &__container {
-    @include flex(row, space-between, center);
+    @include flex(row, space-between, stretch);
   }
 }
